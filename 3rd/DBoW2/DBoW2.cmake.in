@@ -1,8 +1,8 @@
 find_library(DBoW2_LIBRARY dbow2
-    PATHS "/usr/local/lib"
+    PATHS "@CMAKE_INSTALL_PREFIX@/lib"
 )
 find_path(DBoW2_INCLUDE_DIR DBoW2/BowVector.h DBoW2/FeatureVector.h
-    PATHS "/usr/local/include"
+    PATHS "@CMAKE_INSTALL_PREFIX@/include"
 )
 set(DBoW2_LIBS ${DBoW2_LIBRARY})
 set(DBoW2_LIBRARIES ${DBoW2_LIBRARY})
